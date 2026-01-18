@@ -12,6 +12,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/4 right-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -20,6 +21,30 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
+          {/* Profile Photo */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.1, duration: 0.5 }}
+            className="mb-8 flex justify-center"
+          >
+            <div className="relative group">
+              {/* Animated gradient ring */}
+              <div className="absolute -inset-1 hero-gradient rounded-full opacity-75 blur-sm group-hover:opacity-100 group-hover:blur transition-all duration-300" />
+              <div className="absolute -inset-1 hero-gradient rounded-full animate-pulse opacity-50" />
+              {/* Avatar container */}
+              <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full p-1 hero-gradient">
+                <div className="w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                    alt="Balamani Karre"
+                    className="w-full h-full object-cover rounded-full transition-transform duration-300 group-hover:scale-110"
+                  />
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
