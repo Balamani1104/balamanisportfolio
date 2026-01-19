@@ -6,20 +6,20 @@ import { Mail, Linkedin, Github, ArrowUpRight } from "lucide-react";
 const contactLinks = [
   {
     name: "Email",
-    value: "balamanikarre@gmail.com",
-    href: "mailto:balamanikarre@gmail.com",
+    value: "balamanikarre40@gmail.com",
+    href: "mailto:balamanikarre40@gmail.com",
     icon: Mail,
   },
   {
     name: "LinkedIn",
-    value: "linkedin.com/in/balamanikarre",
-    href: "https://www.linkedin.com/in/balamanikarre",
+    value: "linkedin.com/in/karre-balamani",
+    href: "https://www.linkedin.com/in/karre-balamani-b81238395",
     icon: Linkedin,
   },
   {
     name: "GitHub",
-    value: "github.com/balamanikarre",
-    href: "https://github.com/balamanikarre",
+    value: "github.com/Balamani1104",
+    href: "https://github.com/Balamani1104",
     icon: Github,
   },
 ];
